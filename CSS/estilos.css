@@ -109,3 +109,162 @@ color: #37ff0079;
 }
 }
 
+/* === Estilos generales para Index (Bento Grid) === */
+body {
+    background-color: #091057;
+}
+
+.bento {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.grid {
+    background-color: #024CAA;
+    padding: 0em;
+    border-radius: .5em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.grid h3 {
+    font-size: 3em;
+    color: aliceblue;
+}
+
+.grid p {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.grid:hover {
+    background-color: #EC8305;
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+h1, h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: #DBD3D3;
+}
+
+/* Media Queries para diseño responsivo */
+@media (max-width: 768px) {
+    .bento {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .bento {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* === Estilos específicos para cada práctica === */
+
+/* === Práctica 1: Imprimir en consola === */
+.p1-body {
+    background-color: #2A2A72;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 2rem;
+}
+
+.p1-body h1 {
+    color: #EC8305;
+    font-size: 4rem;
+}
+
+/* === Práctica 2: Registro de usuario === */
+.p2-body {
+    background: linear-gradient(45deg, #091057, #1B1939);
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 2rem;
+}
+
+.p2-body h1 {
+    font-size: 3rem;
+    color: #EC8305;
+}
+
+button {
+    background-color: #EC8305;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background-color: #D46C03;
+}
+
+/* === Práctica 3: Funciones organizadas === */
+.p3-body {
+    background: #1B1939;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 2rem;
+}
+
+.p3-body h1 {
+    color: #EC8305;
+    font-size: 3rem;
+}
+
+/* === Práctica 4: Objetos y métodos === */
+.p4-body {
+    background: #2A2A72;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 2rem;
+}
+
+.p4-body h1 {
+    font-size: 3rem;
+    color: #EC8305;
+}
+
+.p4-body p {
+    font-size: 1.5rem;
+}
+
+/* === Práctica 5: Arreglos y cálculos === */
+.p5-body {
+    background: linear-gradient(45deg, #091057, #1B1939);
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 2rem;
+}
+
+.p5-body h1 {
+    font-size: 3rem;
+    color: #EC8305;
+}
+
+.p5-body p {
+    font-size: 1.5rem;
+}
