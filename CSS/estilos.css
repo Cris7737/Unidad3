@@ -267,33 +267,110 @@ button:hover {
     font-size: 1.5rem;
 }
 
-/* Footer */
-footer {
-    margin-top: 30px;
-    text-align: center;
-    padding: 20px;
-    background-color: #001f3f; /* Azul oscuro */
+/* === Práctica 6: Eventos en JavaScript === */
+.p6-body {
+    background: linear-gradient(45deg, #091057, #2A2A72);
     color: white;
-    border-top: 2px solid #4682B4;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 2rem;
 }
 
-/* Botón en el footer */
-footer button {
-    background-color: #32CD32; /* Verde */
+/* === Práctica 7: Menú de Navegación === */
+.p7-body {
+    background: linear-gradient(45deg, #091057, #2A2A72); /* Fondo degradado */
     color: white;
-    border: none;
-    border-radius: 10px;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 2rem;
+}
+
+.p7-body h1 {
+    font-size: 3rem;
+    color: #EC8305; /* Color del título */
+}
+
+.p7-body nav {
+    margin-top: 20px;
+}
+
+.p7-body ul {
+    list-style: none;
+    padding: 0;
+}
+
+.p7-body ul li {
+    margin: 10px 0;
+}
+
+.p7-body ul li a {
+    text-decoration: none;
+    color: #2980B9; /* Color de los enlaces */
+    font-size: 1.2rem;
+}
+
+.p7-body ul li a:hover {
+    color: #8E44AD; /* Cambio de color al pasar el ratón */
+}
+
+.p7-body .buttons {
+    margin-top: 30px;
+}
+
+.p7-body button {
+    background-color: #3498DB;
+    color: white;
+    font-size: 1rem;
     padding: 10px 20px;
-    font-size: 16px;
+    border: none;
     cursor: pointer;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: background-color 0.3s;
+}
+
+.p7-body button:hover {
+    background-color: #2980B9;
+}
+
+/* Estilo para el botón eliminar */
+.p7-body #remove-btn {
+    background-color: #E74C3C;
+}
+
+.p7-body #remove-btn:hover {
+    background-color: #C0392B;
+}
+
+/* Estilo para el botón agregar */
+.p7-body #add-btn {
+    background-color: #2ECC71;
+}
+
+.p7-body #add-btn:hover {
+    background-color: #27AE60;
+}
+
+
+/* Diseño alternativo para el Bento Grid */
+.bento.alternative-design {
+    grid-template-columns: repeat(2, 1fr); /* Cambia a 2 columnas */
+    gap: 2rem; /* Aumenta el espacio entre celdas */
+    background-color: #2A2A72; /* Fondo alternativo */
+    padding: 2rem; /* Aumenta el padding */
+}
+
+/* Estilo de las celdas en el diseño alternativo */
+.bento.alternative-design .grid {
+    background-color: #FF4500; /* Naranja */
+    color: white; /* Texto blanco */
+    border-radius: 10px; /* Bordes redondeados */
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-footer button:hover {
-    background-color: #228B22; /* Verde oscuro */
-    transform: scale(1.1);
+/* Hover en el diseño alternativo */
+.bento.alternative-design .grid:hover {
+    background-color: #DC143C; /* Rojo oscuro */
+    transform: scale(1.1); /* Amplía ligeramente */
 }
 
-footer button:active {
-    transform: scale(0.95);
-}
